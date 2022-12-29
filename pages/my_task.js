@@ -1,4 +1,3 @@
-import { async } from "@firebase/util";
 import MyTasks from "../components/MyTasks.js/MyTasks";
 
 export const getStaticProps = async () => {
@@ -14,12 +13,15 @@ export const getStaticProps = async () => {
 const my_task = ({ data }) => {
   // console.log(data);
   return (
-    <div className="container pt-20">
-      {data.map((t) => (
-        <MyTasks key={t._id} tasks={t} />
-      ))}
+    <div>
+      <div className="container pt-20">
+        {/* {data.map((t) => (
+          <MyTasks key={t._id} tasks={t} />
+        ))} */}
 
-      {/* <MyTasks allTasks={data} /> */}
+        {/* <MyTasks allTasks={data} /> */}
+        <h1>my task</h1>
+      </div>
     </div>
   );
 };

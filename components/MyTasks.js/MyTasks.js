@@ -1,8 +1,7 @@
 import { BiCheckDouble, BiEditAlt } from "react-icons/bi";
 import { AiOutlineDelete } from "react-icons/ai";
 
-import { Dropdown, Avatar, Text, Grid, User, css } from "@nextui-org/react";
-import { comment } from "postcss";
+import { Dropdown } from "@nextui-org/react";
 
 const MyTasks = ({ tasks }) => {
   const { task, _id } = tasks;
